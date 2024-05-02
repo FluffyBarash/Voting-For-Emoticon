@@ -1,0 +1,183 @@
+.emoticons {
+  background-color: wheat;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.emoticons__body {
+  background-color: deepskyblue;
+  border: 4px solid white;
+  border-radius: 20px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.emoticons__body h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.emoticons__body .emoticons__line {
+  margin-bottom: 40px;
+}
+.emoticons__body .emoticons__line .section_one {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.emoticons__body .emoticons__line .section_one span {
+  font-size: 60px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.emoticons__body .emoticons__line .section_one span:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-shadow: 0px 0px 10px white;
+}
+.emoticons__body .emoticons__line .section_two {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.emoticons__body .emoticons__line .section_two p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 18px;
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.showResults {
+  margin: 0 auto;
+  padding: 15px 25px;
+  background-color: coral;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.showResults:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: forestgreen;
+}
+
+.popupWindow__body {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 300px;
+  background-color: steelblue;
+  border-radius: 20px;
+  border: 5px solid powderblue;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -2;
+}
+.popupWindow__body h1,
+.popupWindow__body p {
+  color: white;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.popupWindow__body span {
+  margin-bottom: 10%;
+  font-size: 80px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  user-select: none;
+}
+.popupWindow__body button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: green;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 10px 20px;
+}
+.popupWindow__body button:hover {
+  cursor: pointer;
+  background-color: crimson;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.popupWindow__body_active {
+  z-index: 2;
+}

@@ -1,0 +1,129 @@
+.emoticons {
+  background-color: wheat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emoticons__body {
+  background-color: deepskyblue;
+  border: 4px solid white;
+  border-radius: 20px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  & h1 {
+    user-select: none;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  & .emoticons__line {
+    margin-bottom: 40px;
+    & .section_one {
+      justify-content: center;
+      gap: 100px;
+      display: flex;
+      & span {
+        font-size: 60px;
+        transition: all 0.5s ease;
+        user-select: none;
+        &:hover {
+          cursor: pointer;
+          transition: all 0.5s ease;
+          text-shadow: 0px 0px 10px white;
+        }
+      }
+    }
+    & .section_two {
+      justify-content: center;
+      gap: 134px;
+      display: flex;
+      & p {
+        user-select: none;
+        font-size: 18px;
+        background-color: aliceblue;
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}
+
+.showResults {
+  margin: 0 auto;
+  padding: 15px 25px;
+  background-color: coral;
+  user-select: none;
+
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  &:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: forestgreen;
+  }
+}
+
+.popupWindow__body {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 300px;
+  background-color: steelblue;
+  border-radius: 20px;
+  border: 5px solid powderblue;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -2;
+  & h1,
+  p {
+    color: white;
+    text-transform: uppercase;
+    user-select: none;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  & span {
+    margin-bottom: 10%;
+    font-size: 80px;
+    user-select: none;
+    user-select: none;
+  }
+  & button {
+    user-select: none;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: green;
+    color: white;
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    &:hover {
+      cursor: pointer;
+      background-color: crimson;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.popupWindow__body_active {
+  z-index: 2;
+}

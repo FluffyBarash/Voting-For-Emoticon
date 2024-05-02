@@ -1,0 +1,85 @@
+// #########_Link_###################################################
+
+// @import "_vars";
+// @import "_fonts";
+// @import "_slick";
+
+// #########_Cancellation_###################################################
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 1.6;
+  color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+._container {
+  position: relative;
+  max-width: 1290px;
+  margin: 0px auto;
+}
